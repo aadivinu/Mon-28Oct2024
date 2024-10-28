@@ -22,6 +22,17 @@ case $operation in
     *)
         echo "Invalid operation selected."
         ;;
+    "divide")
+        if [ "$num2" -ne 0 ]; then
+            result=$((num1 / num2))
+            echo "Result of division: $result"
+        else
+            echo "Cannot divide by zero."
+        fi
+        ;;
+    *)
+        echo "Invalid operation selected."
+        ;;
 esac
 
 # Tax calculation based on salary

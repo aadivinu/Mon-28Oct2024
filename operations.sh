@@ -56,3 +56,15 @@ elif (( age <= 19 )); then
 else
     echo "Adult"
 fi
+
+# Age categorization
+read -p "Enter your age: " age
+if (( age < 13 )); then
+    echo "Child"
+elif (( age <= 19 )); then
+    echo "Teenager"
+elif (( age > 60 )); then
+    echo "Oldage"
+else
+    echo "Adult"
+fi
